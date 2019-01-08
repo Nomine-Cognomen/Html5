@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@font-face{
+ font-family:'fontelogo';
+ src: url(gitignore1/projeto-glass-html5/_fonts/bubblegum-sans-regular.otf);
+}
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
 p{
     text-align: justify;
@@ -36,7 +41,7 @@ img#logo{
 }
 
 header#cabecalho h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'fontelogo', Helvetica, sans-serif;
     font-size: 30pt;
     color: #606060;
     text-shadow: 1px 1px 1px rgba(0,0,0,.6);
@@ -45,7 +50,7 @@ header#cabecalho h1{
 }
 
 header#cabecalho h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Titillium Web', sans-serif;
     color: #888888;
     font-size: 15pt;
     padding: 0px;
@@ -119,4 +124,69 @@ nav#menu a{
 nav#menu a:hover {
     color:#ffffff;
     text-decoration: underline;
+}
+
+/* formatação do footer, aside e section */
+
+section#corpo{
+    display:block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+table#tabelaspec{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td{
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+ table#tabelaspec td.ce {
+    color: #ffffff;
+    background-color:#606060; 
+    vertical-align: top;
+    font-weight: bold;
+ }
+
+ table#tabelaspec td.cd{
+    background-color: #cecece;
+ }
+
+ table#tabelaspec caption{
+     color: #888888;
+     font-size: 13pt;
+     font-weight: bolder;
+
+ }
+table#tabelaspec caption span{
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top:10px;
+     
+}
+
+aside#lateral{
+    display: block;
+    width: 350px;
+    float: right;
+}
+
+footer#rodape{
+    clear: both;
+    border-top:1px  solid #606060;
+}
+
+footer#rodape p{
+    text-align: center;
 }
